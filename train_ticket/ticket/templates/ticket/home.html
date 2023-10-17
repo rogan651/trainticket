@@ -1,0 +1,63 @@
+{%load static%}
+<html>
+    <head>
+        <title>trainnew</title>
+
+    </head>
+    <body>
+        <div class="dol">
+            <form action="" name="mms" method="POST">
+                {%csrf_token%}
+                <h1>TICKET BOOKING</h1>
+                <div class="one">
+                    <input type="text" placeholder="FROM " name="from_city" required > 
+                </div>
+
+                <div class="pic">
+                    <img src="" width="100px" height="30px" >
+                </div>
+
+                <div class="two">
+                    <input type="text" placeholder="TO " name="to_city" required > 
+                </div>
+
+                <div class="three">
+                   <input type="text" placeholder="Name" name="username" required>
+                </div>
+
+                <div class="four">
+                    <input type="text" placeholder="moblie.no" name="moblie" required>
+                </div>
+
+                <div class="five">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">female</label>
+                </div>
+
+                <div class="six">
+                    <label for="blood_group"> CHOOSE A BLOOD GROUP:</label>
+                    <select name="blood_group" id="bloodgroup">
+                        <option value="O+">O+</option>
+                        <option value="A+">A+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                </div>
+
+                <div class="seven">
+                    <input type="radio" id="a/c" name="birth" value="a/c">
+                    <label for="a/c">A/C</label>
+                    <input type="radio" id="normal" name="birth" value="normal">
+                    <label for="normal">NORMAL</label>
+                    <input type="radio" id="3rd" name="birth" value="3rd">
+                    <label for="3rd">3rd</label>
+                </div>
+
+                <div>
+                     <button type="submit" class="button button1">BOOK NOW</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

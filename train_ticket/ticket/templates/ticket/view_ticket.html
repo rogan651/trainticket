@@ -1,0 +1,28 @@
+<html>
+
+<head>
+  <title>trainticket</title>
+  <link rel="stylesheet" href="view_train.css">
+</head>
+
+<body>
+  <div class="aaa">
+      <h1>VIEW_TICKET</h1>
+      <ul>
+        {% for ticket in tickets %}
+        <li>from:{{ticket.from_city}}</li>
+        <li>to:{{ticket.to_city}}</li>
+        <li>name:{{ticket.name}}</li>
+        <li>moblie:{{ticket.moblie}}</li>
+        <li>gender:{{ticket.gender}}</li>
+        <li>blood group:{{ticket.blood_group}}</li>
+        <li>birth:{{ticket.birth}}</li>
+        <a href='{%url "edit_ticket" ticket.id %}'>edit</a>
+        <a href='{%url "delete_ticket" ticket.id %}'>delete</a>
+      </ul>
+      {% endfor %}
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<html>
+
+<head>
+  <title>trainticket</title>
+  <link rel="stylesheet" href="trainticket.css">
+
+</head>
+
+<body>
+  <div class="roll">
+    <form action="" name="mmc" method='POST'>
+        {%csrf_token%}
+      <h1>TICKET BOOKING</h1>
+      <div class="from">
+        <input type="text" placeholder="FROM " name="from_city" required value='{{ticket.from_city}}'>
+      </div>
+      <div class="icon">
+        <img src="exchange.png" width="80px" height="30px">
+      </div>
+      <div class="rol">
+        <input type="text" placeholder="TO" name="to_city" required value='{{ticket.to_city}}'>
+      </div>
+      <div class="ro">
+        <input type="text" placeholder="Name" name="username" required value='{{ticket.name}}'>
+      </div>
+      <div class="rr">
+        <input type="text" placeholder="moblie.no" name="moblie" required value='{{ticket.moblie}}'>
+      </div>
+      <div class="train">
+        <img src="train1.jpg" width="350px" height="200px">
+      </div>
+      <div class="mal">
+        <input type="radio" id="male" name="gender"  value='{{ticket.gender}}'>
+          <label for="male">male</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="radio" id="female" name="gender" value='{{ticket.gender}}'>
+          <label for="female">female</label>
+      </div>
+     
+        <div class="bloodg">
+          <label for="blood_group">Choose a Blood Group:</label>
+          <select name="blood_group" id="Blood Group">
+            <option value='{{ticket.blood_group}}'>O+</option>
+            <option value='{{ticket.blood_group}}'>AB+</option>
+            <option value='{{ticket.blood_group}}'>B+</option>
+            <option value='{{ticket.blood_group}}'>O-</option>
+          </select>
+        </div>
+        <div class="mal">
+            <input type="radio" id="A/C" name="birth" value='{{ticket.birth}}'>
+              <label for="A/C">A/C</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="radio" id="Normal" name="birth" value='{{ticket.birth}}'>
+              <label for="Normal">Normal</label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="radio" id="3rd " name="birth" value='{{ticket.birth}}'>
+              <label for="3rdClasss">3rdclass</label>
+          </div>
+           <div>
+            <button type="submit" class="button button1">UPDATE</button>
+           </div>  
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

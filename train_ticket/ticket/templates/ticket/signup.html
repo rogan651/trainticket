@@ -1,0 +1,36 @@
+{%load static%}
+<html>
+    <head>
+        <title>signup</title>
+        <link rel="stylesheet" href="{%static 'styles/signup.css'%}">
+    </head>
+        
+         <div class="leo">
+          <form action="" method='POST'>
+            {% csrf_token %}
+          <h1>signup</h1>
+          <div class="input-box">
+            <input type="text" placeholder="username" name="username" required>
+          </div>
+
+            <div class="input-box">
+               <input type="text" placeholder="moblie number" name="mobile" required >
+            </div>
+
+            <div class="input-box">
+               <input type="text" placeholder="email" name="email" required>
+            </div>
+
+              <div class="input-box">
+                <input type="text" placeholder="password" name="password" required>
+              </div>
+
+              <div>
+               <button type="submit" class="button">Sign up</button>
+               <a href="{% url 'index'%}">Already have account? login</a>
+                </div>
+                
+            </form>  
+            </div>
+        </body>
+</html>    

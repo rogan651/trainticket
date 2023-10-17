@@ -1,0 +1,98 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    body{
+        display:flex;
+        justify-content: center;
+        align-items: center;  
+        background-color: rgb(52, 185, 237); 
+    }
+
+    
+.lll {
+    height: 450px;
+    width: 650px;
+    background:rgba(215, 239, 241, 0.989);
+    opacity: 0.9;
+    color: rgb(29, 29, 232);
+    border-radius: 5px;
+    border: 2px solid rgba(215, 239, 241, 0.989);
+    padding: 30px 40px;
+}
+
+.lll h1 {
+  margin-left: 200px;
+  font-size: 35px;
+}
+
+
+
+.jjj input{
+    height: 20px;
+    width: 250px;
+    margin-top: 40px;
+    margin-left: 150px;
+    background: transparent;
+    border: 2px solid rgba(12, 12, 12, 0.989);
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 10px 25px 20px 20px;
+}
+
+.aaa input{
+    height: 20px;
+    width: 250px;
+    margin-top: 40px;
+    margin-left: 150px;
+    background: transparent;
+    border: 2px solid rgba(12, 12, 12, 0.989);
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 10px 25px 20px 20px;
+}
+
+
+.mmm input{
+    height: 20px;
+    width: 250px;
+    margin-top: 40px;
+    margin-left: 150px;
+    background: transparent;
+    border: 2px solid rgba(12, 12, 12, 0.989);
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 10px 25px 20px 20px;
+}
+
+
+
+.lll .button{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 180px;
+    width: 35%;
+    height: 45px;
+    background: rgb(249, 251, 252);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    border: 2px solid #71a8e7;
+    box-shadow: 300px 300px 550px rgba(9, 67, 241, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: rgb(36, 97, 202);
+    font-weight: 600;
+}
+
+.button1:hover {
+    background-color: #010c0f;
+    color: white;
+  }
+
+.lll .signup{
+    text-align: center;
+}  
